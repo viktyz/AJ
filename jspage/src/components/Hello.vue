@@ -1,22 +1,9 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
-      <li><a href="https://gitter.im/vuejs/vue" target="_blank">Gitter Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
-      <br>
-      <li><a href="http://vuejs-templates.github.io/webpack/" target="_blank">Docs for This Template</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
+  <div class="homepage">
+    <div class="headsection"></div>
+    <div class="secondsection"></div>
+    <div class="thirdsection"></div>
+    <div class="tailsection"></div>
   </div>
 </template>
 
@@ -33,21 +20,30 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
+  .homepage{
+    width: 100%;
+    height: 100%;
+  }
+  .headsection{
+    width: 100%;
+    height: 60px;
+    flex-direction: row;
+    background-color: red;
+  }
+  .secondsection{
+    width: 100%;
+    background-color: blue;
+  }
+  .thirdsection{
+    width: 100%;
+    height: 410px;
+    background-color: green;
+  }
+  .tailsection{
+    width: 100%;
+    height: 230px;
+    margin-bottom: 0px;
+    background-color: gray;
+  }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
 </style>
